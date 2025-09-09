@@ -1,30 +1,26 @@
 <template>
     <div>
-        <h1 style="font-size: 2rem;">Become a Littercoin Merchant</h1>
+        <h1 style="font-size: 2rem;">{{ $t('become_a_littercoin_merchant') }}</h1>
 
         <div class="benefits-container p-10-mob">
             <div class="benefit">
-                <h2>New Loyal Customers</h2>
-                <p>By partnering with Littercoin, your store can attract customers who are passionate about reducing waste and supporting sustainable initiatives.</p>
+                <h2>{{ $t('new_loyal_customers') }}</h2>
+                <p>{{ $t('by_partnering_with') }}</p>
             </div>
             <div class="benefit">
-                <h2>Zero Waste Sales</h2>
-                <p>Accepting Littercoin can lead to increased sales, as customers are more likely to spend their Littercoin at businesses that support sustainable practices.</p>
+                <h2>{{ $t('zero_waste_sales') }}</h2>
+                <p>{{ $t('accepting_littercoin_can') }}</p>
             </div>
             <div class="benefit">
-                <h2>Positive Brand Image</h2>
-                <p>Partnering with Littercoin and accepting its digital currency can enhance your brand image as an eco-friendly and socially responsible business.</p>
+                <h2>{{ $t('positive_brand_image') }}</h2>
+                <p>{{ $t('partnering_with_littercoin') }}</p>
             </div>
         </div>
         <div class="cta-container">
-            <p class="mb1">
-                Apply to become a Littercoin Merchant and we will encourage our community to support your sustainable business.
-            </p>
+            <p class="mb1">{{ $t('apply_to_become') }}</p>
         </div>
         <div>
-            <button @click="becomeAPartner" class="button is-large is-warning" style="border: 1px solid black;">
-                🍃 🥕 🥦  <span style="margin: 0 .75em; font-weight: 600;">Apply</span>   🍄 📲 🌎
-            </button>
+            <button @click="becomeAPartner" class="button is-large is-warning" style="border: 1px solid black;">{{ $t('text_0') }}<span style="margin: 0 .75em; font-weight: 600;">{{ $t('apply') }}</span>{{ $t('text_1') }}</button>
         </div>
     </div>
 </template>

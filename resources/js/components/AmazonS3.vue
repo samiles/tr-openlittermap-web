@@ -1,10 +1,10 @@
 <template name="AmazonS3">
 	<div>
-		<p>This is the new amazon s3 component</p>
+		<p>{{ $t('this_is_the_new_amazon_s3_component') }}</p>
 		<br>
         <form enctype="multipart/form-data" @submit.prevent>
 		  <input type="file" multiple @change="onFileChange" />
-		  <button class="button is-info" @click="upload">Upload</button>
+		  <button class="button is-info" @click="upload">{{ $t('upload') }}</button>
         </form>
 	</div>
 </template>

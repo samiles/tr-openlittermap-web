@@ -20,7 +20,7 @@
         }
     </script>
 
-    <title>OpenLitterMap</title>
+    <title>{{ __('app.openlittermap') }}</title>
 
     <!-- Font & icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -40,20 +40,5 @@
     <link rel="stylesheet" type="text/css" href="/css/MarkerCluster.Default.css">
 
     <!-- code to rotate an img -->
-    <style type="text/css">
-        .rotateimg180 {
-            -webkit-transform:rotate(180deg);
-            -moz-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            transform: rotate(180deg);
-        }
-        .rotateimg90 {
-            -webkit-transform:rotate(90deg);
-            -moz-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-            -o-transform: rotate(90deg);
-            transform: rotate(90deg);
-        }
-    </style>
+    <style type="text/css">{{ __('app.rotateimg180_webkittransformrotate180deg_moztransform') }}</style>
 </head>

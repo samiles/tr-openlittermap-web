@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<p class="mb1em">Click a tag to reset it</p>
+		<p class="mb1em">{{ $t('click_a_tag_to_reset_it') }}</p>
 		<ul>
 			<li v-for="category in tags" class='admin-item'>
 				<span class="category">{{ category['category'] }}:</span>

@@ -1,7 +1,5 @@
 <template>
-	<button class="button is-large is-dark" @click="generateOneLtrx">
-		Generate Littercoin!
-	</button>
+	<button class="button is-large is-dark" @click="generateOneLtrx">{{ $t('generate_littercoin') }}</button>
 </template>
 
 <script>
