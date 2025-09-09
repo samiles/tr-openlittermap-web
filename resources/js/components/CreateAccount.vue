@@ -8,7 +8,7 @@
                     <div class="select">
                         <select v-model="planInt" @change="changeUrl">
                             <option v-for="plan in plans" :value="plan.id">
-                                {{ plan.name }} &mdash; €{{ plan.price / 100 }}
+                                {{ plan.name }}{{ $t('text_0') }}{{ plan.price / 100 }}
                             </option>
                         </select>
                     </div>

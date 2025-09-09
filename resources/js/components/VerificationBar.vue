@@ -1,5 +1,5 @@
 <template name="verification-bar">
-	<progress class="progress is-info" :value="isValue" max="1">isValue</progress>
+	<progress class="progress is-info" :value="isValue" max="1">{{ $t('isvalue') }}</progress>
 </template>
 
 <script>

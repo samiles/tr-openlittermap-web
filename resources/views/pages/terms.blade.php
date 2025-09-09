@@ -2,34 +2,25 @@
 
 @section('content')
 	<div class="container">
-		<h1>PLEASE READ CAREFULLY BEFORE USING OPEN LITTER MAP</h1>
+		<h1>{{ __('app.please_read_carefully') }}</h1>
 		<p>
-			<i>
-				Last updated: 17<sup>th</sup>
-					 Feb 2018
-			</i>
+			<i>{{ __('app.last_updated_17') }}<sup>th</sup>{{ __('app.feb_2018') }}</i>
 		</p>
 		<br>
 
 		This END USER LICENCE AGREEMENT (the “EULA” or the "Licence") is a legal agreement between you (the "Licensee" or "you") and Seán Lynch trading as OpenLitterMap.com (“OpenLitterMap”, the “Licensor”, “our” or "we") for your licensed use of and access to www.OpenLitterMap.com (the “Website”), the internet based user interface (the “Web Application”) and the multi-platform smartphone and tablet software application (the “Mobile Application”) which will launch soon (together the Website, the Web Application and the Mobile Application are hereafter described as the “Platform”) and your access to the data-logging process which provides a means for Citzien Scientists (you) to contribute and attribute geotagged images of litter (eg. "cigarette butts", "plastic bottles", etc.) through our content-sharing platform (the "Services") in accordance with the terms of this Agreement.
+		<br>{{ __('app.the_terms_of') }}<br>{{ __('app.openlittermap_data_is') }}<a href="https://opendatacommons.org/licenses/odbl/">{{ __('app.open_data_licensed') }}</a> (ODBl - https://opendatacommons.org/licenses/odbl/). Any rights in individual contents of the database are licenced under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/
+		<br>{{ __('app.this_means_that') }}<br>
 		<br>
-		The Terms of Service (hereforth referred to as the “Terms”) govern access and use of the OpenLitterMap website. These Terms are a legal agreement between you and us. By using these Services you are agreeing to these Terms.
-		<br>
-		OpenLitterMap data is <a href="https://opendatacommons.org/licenses/odbl/">Open Data, licensed by the Open Database Licence</a> (ODBl - https://opendatacommons.org/licenses/odbl/). Any rights in individual contents of the database are licenced under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/
-		<br>
-		This means that anyone is free to copy, distribute, share and use our data, as long as you credit OpenLitterMap and its contributors with "© OpenLitterMap & Contributors".
-
+		<b>{{ __('app.disclaimer_openlittermap_is') }}</b>
 		<br>
 		<br>
-		<b>DISCLAIMER: OpenLitterMap is not intended for use by individuals in an emergency situation nor is it currently being used to notify law enforcement or public bodies of the existence of real time litter issues. It is currently being used for geostatistical and awareness-raising purposes only. If you wish to report a specific issue of concern regarding the collection and removal of litter, please contact your local authority. We are not yet in contact with Local Authorities and we cannot guarantee that our 3rd party communication with them will enable their response to be as effective as contact from a concerned member of the public. However, with your ongoing participation we hope to achieve this to solve problems such as the millions of tonnes of plastic entering the ocean of our only habitable planet.</b>
+		<p>{{ __('app.please_be_careful') }}<b>{{ __('app.you_unreservedly_agree') }}</b></p>
+		<br>
+		<p>{{ __('app.by_registering_for') }}</p>
 		<br>
 		<br>
-		<p>PLEASE BE CAREFUL AND REMAIN VIGILANT WHEN DEALING WITH LITTER, PARTICULARLY DRUG-RELATED LITTER (EG. NEEDLES & INJECTING EQUIPMENT), AS IT POSES A SIGNIFICANT THREAT TO YOUR PERSONAL HEALTH AND WELL-BEING. YOU ARE ENTIRELY RESPONISBLE FOR YOURSELF WHEN YOU ARE DEALING WITH LITTER IN ANY WAY INCLUDING LOOKING FOR, PHOTOGRAPHING, COLLECTING DATA ON, REMOVING, ATTEMPTING TO REMOVE AND/OR ANY OTHER MEANS OF COMING INTO CONTACT WITH LITTER AND/OR DRUG-RELATED LITTER. UNDER NO CIRCUMSTANCES CAN WE BE HELD ACCOUNTABLE FOR PERSONAL INJURUES OR ANY OTHER CLAIMS RESULTING FROM ANY CONTENT PUBLISHED TO OR COMING FROM THIS WEBSITE INCLUDING PERSONAL INJURIES FROM NEEDLES, NEEDLE-STICKS OR ANY OTHER FORM OF DRUG PARAPHANALIA OR HARM THAT MAY BE CAUSED FROM ACCIDENTS, DISCOVERY OF, MISHANDLING OF AND THE USE OR IMPROPER USE OF DRUG PARAPHANALIA OR DRUG-RELATED LITTER.<b> YOU UNRESERVEDLY AGREE TO REMOVE OUR LIABILITY FROM ANY DAMAGES THAT MAY OCCUR FROM USE OR ACCESS OF THESE SERVICES OR FROM INFORMATION SHARED BY A 3RD PARTY.</b></p>
-		<br>
-		<p>BY REGISTERING FOR, UPLOADING TO AND/OR DOWNLOADING DATA AND INFORMATION FROM THE PLATFORM AND YOUR SUBSEQUENT CONTINUED USE OF THE PLATFORM AND THE SERVICES, YOU CONSENT TO BE BOUND BY THIS LICENCE. BY TICKING THE BOX ON REGISTRATION, AND AT ANY OTHER TIME ON LOGGING IN TO THE PLATFORM AND THROUGH YOUR CONTINUED USE OF THE SERVICES AND THE PLATFORM, YOU AGREE TO BE BOUND TO THE TERMS OF THIS LICENCE. IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, THEN DO NOT REGISTER FOR THE PLATFORM, OR USE ANY OF THE SERVICES. BY TICKING THE BOX YOU CONFIRM THAT YOU HAVE READ, YOU DO ACCEPT AND UNDERSTAND THE TERMS OF THIS LICENCE AGREEMENT; THAT YOU ALSO CONSENT TO USE ELECTRONIC SIGNATURES AND ACKNOWLEDGE YOUR TICKING OF BOX TO BE AN ELECTRONIC SIGNATURE SUFFICIENT TO BIND YOU TO THE TERMS OF THIS LICENCE AGREEMENT.</p>
-		<br>
-		<br>
-		<h3>SECTION 1. GRANT AND SCOPE OF LICENCE</h3>
+		<h3>{{ __('app.section_1_grant_and_scope_of_licence') }}</h3>
 		<div class="container">
 			<p>1.1	General: </p>
 			<div class="container">
@@ -45,9 +36,7 @@
 			</div>
 			<br>
 			<p>1.3 Licence:</p>
-			<div class="container">
-				OpenLitterMap hereby grants to you a limited, personal or commercial, non- exclusive, non-transferable, temporary, revocable, non-assignable, non-sub-licensable licence and right to access the Platform and the Services though a generally available web browser in consideration of your strict and continued compliance with the following conditions:
-				<br>
+			<div class="container">{{ __('app.openlittermap_hereby_grants') }}<br>
 				<br>1.3.1	your agreement, as evidenced by your acceptance of this EULA and your continued use of the Platform and the Services, to abide by the terms of this Licence;
 				<br>
 				<br>1.3.2	your continuing compliance with the terms of this EULA and the Privacy Policy posted on the Website (which is hereby incorporated by this reference); and
@@ -67,7 +56,7 @@
 			</div>
 
 		<br>
-		<h3>SECTION 2. ACCESS TO THE SERVICES</h3>
+		<h3>{{ __('app.section_2_access_to_the_services') }}</h3>
 		<br>
 		<p>2.1.	Your Account: OpenLitterMap is offering access to and use of the Platform and the Services solely for use by the person or entity in whose name an account is registered and not for the use or benefit of any third party. OpenLitterMap may change, suspend or discontinue any part of the Platform, the Content and/or the Services at any time, including the availability of any feature, database, or content.
 		<br>
@@ -93,7 +82,7 @@
 		<br>2.7.	Privacy:	 Please note that privacy is very important to us. You should not enter and should also protect sensitive personal information such as your phone number, street address, or other information that is confidential in nature, by avoiding inputting them in fields that would present in a public manner or as identifying information. Please see our Privacy Policy which governs the manner in which your personal information is used and displayed by OpenLitterMap. By using this Platform and availing of the Services, you understand and agree that we are a content-sharing platform providing you with a means to view, locate and upload geo-tagged photos and other materials that are intended to be made public. This means that any geo-tagged photo you share, once properly attributed with the contents exhibited and once passes our verification system, will have a visible spatial (eg. centimeter accurate GPS location) and temporal (eg. a specific point in time to the second, minute, hour, day, month, year) stamp that will identify the contributors location at a specific location in time. You confirm that we may access this location identification mechanism and we may share this with information third parties and users of this Platform. Any registered User may view or potentially re-use your content that you provide to the Service. By default, the images you post will remain anonymous, however if you wish, you have the option to attribute either your full name or the unique username /organisation you are legally entitled to represent on all or none of the images you submit through your account. This can be changed in the settings section at openlittermap.com/settings/privacy.
 		</p>
 		<br>
-		<h3>SECTION 3. REGISTRATION</h3>
+		<h3>{{ __('app.section_3_registration') }}</h3>
 		<br>
 		<p>3.1	Registration Process:
 		<div class="container">
@@ -109,7 +98,7 @@
 		<br>3.4:	Access Indemnity: You indemnify us and hold us harmless for all damages and losses related to your failure to comply with the provisions of this Section 3, including, without limitation, your failure to secure your End-User Account from third party access.
 		</p>
 		<br>
-		<h3>SECTION 4. AGE AND RESPONSIBILITY</h3>
+		<h3>{{ __('app.section_4_age_and_responsibility') }}</h3>
 		<br>
 		<p>4.1	Age: Any individual making use of the Platform or the Services must be over 18 years of age to register or utilise them.
 		<br>
@@ -123,7 +112,7 @@
 		</div>
 		</p>
 		<br>
-		<h3>SECTION 5. USER UNDERTAKINGS</h3>
+		<h3>{{ __('app.section_5_user_undertakings') }}</h3>
 		<p>5.1	Undertaking: Except as expressly set out in this Licence or as permitted by any local law, you undertake not to:
 		<div class="container">
 			<br>5.1.1.	use the Services for any unlawful or illegal purpose;
@@ -160,7 +149,7 @@
 			<br>5.3	Warranty: You represent and warrant that you have the legal right and capacity to enter into this EULA in your jurisdiction.
 		</p>
 		<br>
-		<h3>SECTION 6. OpenLitterMap 'UNDERTAKINGS'</h3>
+		<h3>{{ __('app.section_6_openlittermap_undertakings') }}</h3>
 		<p>6.1	OpenLitterMap Indemnity: We shall indemnify you against any claim that your use of or access to the Platform or Services infringes the copyright of any third party provided:
 		<div class="container">
 			<br>6.1.1	such claim relates to the technology and software underlying the Platform and or the Services;
@@ -183,11 +172,11 @@
 		</div>
 		</p>
 		<br>
-		<h3>SECTION 7. THIRD PARTY SITES</h3>
+		<h3>{{ __('app.section_7_third_party_sites') }}</h3>
 		<br>
 		<p>7.1	Links: OpenLitterMap if it includes links to third party web sites in its Content (“Third Party Site(s)”) is not responsible for and does not endorse any features, content, advertising, products or other materials on or available from Third Party Sites or applications. If you decide to access Third Party Sites, you do so at your own risk and agree that your use of any Third Party Sites is on an “as-is” basis without any warranty, and your use of any Third Party Site is subject to the terms and conditions contained therein.</p>
 		<br>
-		<h3>SECTION 8. WARRANTY & DISCLAIMER </h3>
+		<h3>{{ __('app.section_8_warranty_disclaimer') }}</h3>
 		<br><p>8.1	ANY INFORMATION OR CONTENT CONTAINED IN THE PLATFORM OR PROVIDED VIA THE SERVICES IS PROVIDED “AS IS” OR “AS AVAILABLE”.  WHILE OpenLitterMap STRIVES TO PROVIDE YOU WITH USEFUL AND ACCURATE EVIDENCE BASED INFORMATION, OpenLitterMap DOES NOT WARRANT, AND EXPRESSLY DISCLAIMS, THAT THE INFORMATION CONTAINED IN CONTENT PROVIDED BY THIS PLATFORM IS UP-TO- DATE AND COMPLETE.
 		<br>
 		<br>8.2	AN END USER OF THE PLATFORM IS RESPONSIBLE FOR ANY AND ALL DAMAGES ARISING FROM PERSONAL CONTACT WITH LITTER INCLUDING NEEDLES, NEEDLE-STICKS OR ANY FORM OF DRUG-RELATED LITTER THAT MAY ARISE AS A CONSEQUENCE OF THEIR SEARCH FOR OR COLLECTION OF LITTER INCLUDING HANDLING OR MISHANDLING LITTER THAT MAY CAUSE HARM TO THE END USER’S PERSONAL HEALTH AND WELL-BEING. THE END USER HEREBY FULLY ACKNOWLEDGES THAT THEY ARE RESPONSIBLE FOR THEIR OWN ACTIONS AND THAT UNDER NO CIRCUMSTANCES CAN THE LICENSOR BE HELD RESPONSIBLE FOR SUCH ACTIONS. BY VOLUNTEERING TO SUBMIT AND CATEGORIZE GEOTAGGED PHOTOS OF LITTER WE STRIVE TO REDUCE THE HARMS CAUSED BY LITTER TO SOCIETY.
@@ -201,7 +190,7 @@
 		<br>8.6	OpenLitterMap DOES NOT GUARANTEE THAT THE SERVICES IT PROVIDES WILL FUNCTION WITHOUT INTERRUPTION OR ERRORS IN OPERATION. IN PARTICULAR, THE OPERATION OF THE SERVICES MAY BE INTERRUPTED DUE TO MAINTENANCE, UPDATES, OR SYSTEM OR NETWORK FAILURES. OpenLitterMap DISCLAIMS ALL LIABILITY FOR DAMAGES CAUSED BY ANY SUCH INTERRUPTION OR ERRORS IN FUNCTIONALITY. FURTHERMORE, OpenLitterMap DISCLAIMS ALL LIABILITY FOR ANY MALFUNCTIONING, IMPOSSIBILITY OF ACCESS, OR POOR USE CONDITIONS OF THE PLATFORM DUE TO INAPPROPRIATE EQUIPMENT, DISTURBANCES RELATED TO INTERNET SERVICE PROVIDERS, TO THE SATURATION OF THE INTERNET NETWORK, AND FOR ANY OTHER REASON.
 		</p>
 		<br>
-		<h3>SECTION 9: LIMITATION OF LIABILITY.</h3>
+		<h3>{{ __('app.section_9_limitation_of_liability') }}</h3>
 		<br>
 		<p>9.1	Precedence: This Section prevails over all other provisions of this EULA and sets out the entire liability of OpenLitterMap  in respect of:
 		<div class="container">
@@ -240,7 +229,7 @@
 		</div>
 		</p>
 		<br>
-		<h3>SECTION 10. INTELLECTUAL PROPERTY RIGHTS </h3>
+		<h3>{{ __('app.section_10_intellectual_property_rights') }}</h3>
 		<p>10.1	Vesting: You acknowledge that all Intellectual Property Rights, title and interest in the Platform and the Services contained therein, throughout the world belong to Seán Lynch, that rights in the these are licensed (not sold) to you, and that you have no rights in, or to, the Platform and the Services other than the right to use them in accordance with the terms of this EULA.
 		<br>10.2	Contributions: Currently OpenLitterMap only accepts feedback to seanlynch@umail.ucc.ie. Please note that as OpenLitterMap develops we welcome your information, ideas, suggestions or other materials which you may supply. Any ideas, suggestions, documents, improvements, comments, proposals or feedback in relation to the operation of the Platform and or the Services (“Feedback”) in whatever manner or form facilitated by the Platform; any such communication with OpenLitterMap whether verbally, via postings on blogs, forums, questionnaires, email and the like (“Communication”), you acknowledge and agree that such Feedback and or Communication (together “Contributions”):
 		<div class="container">
@@ -254,13 +243,13 @@
 		</div>
 		</p>
 		<br>
-		<h3>SECTION 11. INTEGRITY OF DATA</h3>
+		<h3>{{ __('app.section_11_integrity_of_data') }}</h3>
 		<p>11.1	Not Bespoke: You acknowledge that the Platform, the Services and the software have not been developed to meet your individual requirements and that it is therefore your responsibility to ensure that the facilities and functions of the Platform and the Services as described on the Website, meet your requirements.
 		<br>11.2	Minor Errors: You acknowledge that the Platform and the Services may not be free of bugs or errors and you agree that the existence of any errors shall not constitute a breach of this Licence.
 		<br>11.3	Insurance: You agree that you are the best judge of the value and importance of the data held on your End-User Account and that you will be solely responsible for taking out any insurance policy or other financial cover for loss or damage which may arise from loss of data for any reason.
 		</p>
 		<br>
-		<h3>SECTION 12. TERMINATION</h3>
+		<h3>{{ __('app.section_12_termination') }}</h3>
 		<p>12.1	Duration: This Licence is effective either until deactivated by you by emailing us at seanlynch@umail.ucc.ie
 		<br>12.2	Immediate Termination: OpenLitterMap may terminate this Licence immediately if:
 		<br>12.2.1	you commit a material or persistent breach of this Licence which you fail to remedy (if remediable) within 14 days after the service on you of notice requiring you to do so;
@@ -274,39 +263,39 @@
 		<br>12.4.4	All data stored and retained in the System will be deleted within a reasonable period.
 		</p>
 		<br>
-		<h3>SECTION 13. DATA PROTECTION</h3>
-		<p>OpenLitterMap shall comply with the Data Protection requirements set out in our Privacy Policy.</p>
+		<h3>{{ __('app.section_13_data_protection') }}</h3>
+		<p>{{ __('app.openlittermap_shall_comply') }}</p>
 		<br>
-		<h3>SECTION 14. NOTICES</h3>
+		<h3>{{ __('app.section_14_notices') }}</h3>
 		<p>14.1	Service messages: For the purposes of service messages and notices about the Services to you, OpenLitterMap may place a banner notice across the Platform to alert you to certain changes such as modifications to this EULA. Alternatively, notice may consist of an email from OpenLitterMap to an email address associated with your account or via a digital distribution platform for mobile applications, applicable to your particular device should we choose to facilitate this in the future.
 		<br>14.2:	General Communication: You also agree that OpenLitterMap may communicate with you through your account or through other means including email about your account or services associated with OpenLitterMap. To unsubscribe from any communication we circulate to you, please click on the unsubscribe mechanism at the bottom of the communication. You acknowledge and agree that we shall have no liability associated with or arising from your failure to do so, to maintain accurate contact or other information, including, but not limited to, your failure to receive critical information about the Platform and Services.
 		<br>14.3	Contacting OpenLitterMap : You may contact OpenLitterMap directly by email at seanlynch@umail.ucc.ie
 		</p>
 		<br>
-		<h3>SECTION 15. AMENDMENTS TO THE LICENCE</h3>
+		<h3>{{ __('app.section_15_amendments_to_the_licence') }}</h3>
 		<p>15.1	Amendments: OpenLitterMap reserves the right, at our sole discretion, to amend, add or delete any of the terms and conditions of this Licence. OpenLitterMap will post notifications of any such changes to this Licence on the Website or in the Application, will provide a link to the revised version of this Licence, and may provide such other notice as the Licensor may elect in its sole discretion. If any future changes to this Licence are unacceptable to you or cause you to no longer be in compliance with this Licence, you may terminate this Licence in accordance with the terms herein.
 		<br>15.2	Evidence of Acceptance: Your installation, download and/or use of any updated or modified Software (if any) and/or your continued use of the Website, the Application or the Services following notice of changes to this Licence as described above means you accept any and all such changes. OpenLitterMap  may change, modify, suspend, or discontinue any aspect of the Website, the Application and/or the Services at any time.
 		<br>15.3	Limits: OpenLitterMap may also impose limits on certain features without notice or liability. You disclaim any right, title or interest, monetary or otherwise, in any feature or content contained in the Platform and/or the Services.
 		</p>
 		<br>
-		<h3>SECTION 16. WAIVER</h3>
+		<h3>{{ __('app.section_16_waiver') }}</h3>
 		<p>16.1	Strict Performance: If OpenLitterMap fails, at any time during the term of this Licence, to insist on strict performance of any of your obligations under this Licence, or if OpenLitterMap fails to exercise any of the rights or remedies to which it is entitled under this Licence, this shall not constitute a waiver of such rights or remedies and shall not relieve you from compliance with such obligations.</p>
 		<br>
-		<h3>SECTION 17. CONFIDENTIAL INFORMATION</h3>
+		<h3>{{ __('app.section_17_confidential_information') }}</h3>
 		<p>17.1	Non-Confidential Relationship: You acknowledge and agree that your relationship with OpenLitterMap is not a confidential, fiduciary, or other type of special relationship, and that your decision to submit any User Generated Content does not place OpenLitterMap in a position that is any different from the position held by members of the general public, including with regard to your User Generated Content. None of your User Generated Content will be subject to any obligation of confidence on the part of OpenLitterMap, and OpenLitterMap will not be liable for any use or disclosure of any Content you provide, subject at all times to the terms of the Privacy Policy.</p>
 		<br>
-		<h3>SECTION 18. SEVERABILITY</h3>
-		<p>If any of the terms of this Licence are determined by any competent authority to be invalid, unlawful or unenforceable to any extent, such term, condition or provision will to that extent be severed from the remaining terms, conditions and provisions which will continue to be valid to the fullest extent permitted by law.</p>
+		<h3>{{ __('app.section_18_severability') }}</h3>
+		<p>{{ __('app.if_any_of') }}</p>
 		<br>
-		<h3>SECTION 19. ENTIRE AGREEMENT</h3>
-		<p>This EULA and any document expressly referred to in it represents the entire agreement between you and Seán Lynch trading as OpenLitterMap, in relation to the license hereunder and supersedes any prior agreement, representation, understanding or arrangement between us, whether oral or in writing. Both Parties hereunder acknowledge that, in entering into this EULA, neither Party has relied on any representation, undertaking or promise given by the other or implied from anything said or written in negotiations between us before entering into this Licence except as expressly stated in this Licence. </p>
+		<h3>{{ __('app.section_19_entire_agreement') }}</h3>
+		<p>{{ __('app.this_eula_and') }}</p>
 		<br>
-		<h3>SECTION 20. LAW AND JURISDICTION</h3>
+		<h3>{{ __('app.section_20_law_and_jurisdiction') }}</h3>
 		<p>20.1	Jurisdiction: This EULA is governed by Irish law. Any dispute arising from, or related to, any term of this EULA shall be subject to the exclusive jurisdiction of the Irish courts.
 		<br>20.2	Language: Any dispute arising from, or related to, any term of this EULA arising between the Parties, shall be resolved or determined based on the English language version alone. These terms were originally written in English. In the event that these terms are translated into any other language, the translation shall be for review purposes only and have no legal effect.
 		</p>
 		<br>
-		<h3>SECTION 21. Relationship</h3>
-		<p>Nothing in this Agreement shall create, evidence or imply any agency, partnership or joint venture between you and OpenLitterMap. Neither you nor OpenLitterMap  shall act or describe itself as the agent of the other; nor shall either party represent that it has any authority to make commitments on behalf of the other.</p>
+		<h3>{{ __('app.section_21_relationship') }}</h3>
+		<p>{{ __('app.nothing_in_this') }}</p>
 	</div>
 @stop

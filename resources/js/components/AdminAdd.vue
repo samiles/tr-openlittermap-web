@@ -25,7 +25,7 @@
 			@click="decr"
 		>-</button>
 
-		<button class="button is-medium is-success" @click="plus">Add Data</button>
+		<button class="button is-medium is-success" @click="plus">{{ $t('add_data') }}</button>
 
 		<button
 			:disabled="checkIncr"

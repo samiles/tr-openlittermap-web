@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenLitterMap Impact Report</title>
+    <title>{{ __('app.openlittermap_impact_report') }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
         body {
@@ -178,22 +178,22 @@
             <div class="flex flex-1" style="justify-content: space-around; align-items: center;">
                 <div class="stats">
                     <div>
-                        <p><strong>{{ number_format($newUsers) }}</strong> New Users</p>
-                        <p><strong>{{ number_format($totalUsers) }}</strong> Total Users</p>
+                        <p><strong>{{ number_format($newUsers) }}</strong>{{ __('app.new_users') }}</p>
+                        <p><strong>{{ number_format($totalUsers) }}</strong>{{ __('app.total_users') }}</p>
                     </div>
                 </div>
 
                 <div class="stats">
                     <div>
-                        <p><strong>{{ number_format($newPhotos) }}</strong> New Photos</p>
-                        <p><strong>{{ number_format($totalPhotos) }}</strong> Total Photos</p>
+                        <p><strong>{{ number_format($newPhotos) }}</strong>{{ __('app.new_photos') }}</p>
+                        <p><strong>{{ number_format($totalPhotos) }}</strong>{{ __('app.total_photos') }}</p>
                     </div>
                 </div>
 
                 <div class="stats">
                     <div>
-                        <p><strong>{{ number_format($newTags) }}</strong> New Tags</p>
-                        <p><strong>{{ number_format($totalTags) }}</strong> Total Tags</p>
+                        <p><strong>{{ number_format($newTags) }}</strong>{{ __('app.new_tags') }}</p>
+                        <p><strong>{{ number_format($totalTags) }}</strong>{{ __('app.total_tags') }}</p>
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@
     <div class="categories">
 
         <div class="category-card" style="flex: 1.5;">
-            <h3>Top 10 Users</h3>
+            <h3>{{ __('app.top_10_users') }}</h3>
 
             @if (count($topUsers) > 0)
             @foreach ($topUsers as $index => $topUser)
@@ -238,7 +238,7 @@
                         @if($topUser['name'] || $topUser['username'])
                             <span>{{ $topUser['name'] }} {{ $topUser['username'] }}</span>
                         @else
-                            <span>Anonymous</span>
+                            <span>{{ __('app.anonymous') }}</span>
                         @endif
                     </div>
 
@@ -257,7 +257,7 @@
         </div>
 
         <div class="category-card">
-            <h3>Top 10 Tags</h3>
+            <h3>{{ __('app.top_10_tags') }}</h3>
 
             @if (count($topTags) > 0)
                 @foreach ($topTags as $tag => $quantity)
@@ -267,7 +267,7 @@
         </div>
 
         <div class="category-card">
-            <h3>Top 10 Brands</h3>
+            <h3>{{ __('app.top_10_brands') }}</h3>
 
             @if (count($topBrands) > 0)
                 @foreach ($topBrands as $brand => $quantity)

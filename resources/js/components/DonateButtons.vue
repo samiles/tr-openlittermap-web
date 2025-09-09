@@ -4,7 +4,7 @@
 
 		<div v-else class="box">
 			<h3 class="title is-2 mb1em">
-				<strong style="color: #363636;">Select an amount:</strong>
+				<strong style="color: #363636;">{{ $t('select_an_amount') }}</strong>
 			</h3>
 
 			<div class="grid-container has-text-centered">
@@ -14,13 +14,13 @@
 							<strong>€{{ amount.amount / 100 }}</strong>
 						</h3>
 
-						<button class="button is-medium is-primary" @click="donate(amount.id)">Donate now</button>
+						<button class="button is-medium is-primary" @click="donate(amount.id)">{{ $t('donate_now') }}</button>
 					</div>
 				</div>
 			</div>
 
 			<h3 class="title is-1" style="text-align: right;">
-				<strong style="color: #363636;">Thank you.</strong>
+				<strong style="color: #363636;">{{ $t('thank_you') }}</strong>
 			</h3>
 		</div>
 	</div>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>OpenLitterMap - GoFundMe</title>
+    <title>{{ __('app.openlittermap_gofundme') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
@@ -22,62 +22,32 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
                         <td>
-                            <p style="font-family: sans-serif; font-size: 18px;">Hi everyone,</p>
-                            <p style="font-family: sans-serif; font-size: 18px;">Today, we are launching a GoFundMe to try and bring OpenLitterMap to the next stage.</p>
+                            <p style="font-family: sans-serif; font-size: 18px;">{{ __('app.hi_everyone') }}</p>
+                            <p style="font-family: sans-serif; font-size: 18px;">{{ __('app.today_we_are') }}</p>
                             <ul style="font-family: sans-serif; font-size: 19px;">
                                 <li>
-                                   <a href="https://www.gf.me/u/y5tv89">Here is a link to the  GoFundMe Campaign</a>
+                                   <a href="https://www.gf.me/u/y5tv89">{{ __('app.here_is_a_link_to_the_gofundme_campaign') }}</a>
                                 </li>
                                 <br>
-                                <li>
-                                    This includes our first promotional video!
-                                    <br><br>
-                                    Please share it with as many people as you can
-                                </li>
+                                <li>{{ __('app.this_includes_our') }}<br><br>{{ __('app.please_share_it') }}</li>
                                 <br>
-                                <li>
-                                    Included in the campaign is a new video showing how to use our App
-                                </li>
+                                <li>{{ __('app.included_in_the') }}</li>
                                 <br>
-                                <li>
-                                    We also just released <a href="https://openlittermap.com">OpenLitterMap.com v2.0</a>
+                                <li>{{ __('app.we_also_just_released') }}<a href="https://openlittermap.com">OpenLitterMap.com v2.0</a>
 
-                                    <br><br>
-                                    This is a huge improvement on the code I wrote 3-4 years ago.
-
-                                    <br><br>
-                                    There is a new landing page
-
-                                    <br><br>
-                                    All data on the <a href="https://openlittermap.com/global">global map</a> now loads instantly. Wow!
-
-                                    <br><br>
-                                    A few things are currently not working, like leaderboards, downloads and live updates, but hopefully I will get to fix them over the weekend (If I am not too busy sending out 1000s of emails).
-
-                                    <br><br>
-                                    Adding new features is going to be a LOT easier.
-
-                                    <br><br>
-                                    We are much closer to going open source!
-
-                                    <br><br>
-                                    We have many more special annoucements and GOOD NEWS coming soon!
-                                </li>
+                                    <br><br>{{ __('app.this_is_a') }}<br><br>{{ __('app.there_is_a_new_landing_page') }}<br><br>{{ __('app.all_data_on_the') }}<a href="https://openlittermap.com/global">{{ __('app.global_map') }}</a>{{ __('app.now_loads_instantly_wow') }}<br><br>{{ __('app.a_few_things') }}<br><br>{{ __('app.adding_new_features') }}<br><br>{{ __('app.we_are_much_closer_to_going_open_source') }}<br><br>{{ __('app.we_have_many') }}</li>
                                 <br>
-                                <li>
-                                    Reminder that every Thursday, 6pm Irish time, we run a community zoom call for an hour. We need your help, and we would love to hear your opinion about the future of this platform (Your platform).
-                                </li>
+                                <li>{{ __('app.reminder_that_every') }}</li>
                                 <br>
-                                <li>
-                                    If you would like to help, we would love to have you on our <a href="https://join.slack.com/t/openlittermap/shared_invite/zt-fdctasud-mu~OBQKReRdC9Ai9KgGROw">Slack channel!</a>
+                                <li>{{ __('app.if_you_would') }}<a href="https://join.slack.com/t/openlittermap/shared_invite/zt-fdctasud-mu~OBQKReRdC9Ai9KgGROw">{{ __('app.slack_channel') }}</a>
                                 </li>
                             </ul>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <h3 style="font-family: sans-serif;">Thanks again,</h3>
-                            <h3 style="font-family: sans-serif;">Seán @ OpenLitterMap</h3>
+                            <h3 style="font-family: sans-serif;">{{ __('app.thanks_again') }}</h3>
+                            <h3 style="font-family: sans-serif;">{{ __('app.sen_openlittermap') }}</h3>
                         </td>
                     </tr>
                 </table>
@@ -87,10 +57,9 @@
         <td bgcolor="#2ecc71" style="padding: 30px 30px 30px 30px;">
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-family: sans-serif;">
                 <tr>
-                    <td width="75%">
-                        &copy; OpenLitterMap & Contributors 2020.<br/>
-                        <p>If you want to unsubscribe <a href="https://openlittermap.com/emails/unsubscribe/{{ $user->sub_token }}">click this link</a></p>
-                        <p>(you can also un-subscribe and re-subscribe to our email updates in the settings)</p>
+                    <td width="75%">{{ __('app.copy_openlittermap_contributors_2020') }}<br/>
+                        <p>{{ __('app.if_you_want_to_unsubscribe') }}<a href="https://openlittermap.com/emails/unsubscribe/{{ $user->sub_token }}">click this link</a></p>
+                        <p>{{ __('app.you_can_also') }}</p>
                     </td>
                 </tr>
                 <tr>
@@ -102,33 +71,25 @@
                                         <img src="https://openlittermap.com/assets/icons/facebook2.png" alt="" width="38" height="38" style="display: block;" border="0" />
                                     </a>
                                 </td>
-                                <td style="font-size: 0; line-height: 0;" width="20">
-                                    &nbsp;
-                                </td>
+                                <td style="font-size: 0; line-height: 0;" width="20">{{ __('app.nbsp') }}</td>
                                 <td>
                                     <a href="http://www.twitter.com/openlittermap">
                                         <img src="https://openlittermap.com/assets/icons/twitter2.png" alt="" width="38" height="38" style="display: block;" border="0" />
                                     </a>
                                 </td>
-                                <td style="font-size: 0; line-height: 0;" width="20">
-                                    &nbsp;
-                                </td>
+                                <td style="font-size: 0; line-height: 0;" width="20">{{ __('app.nbsp_1') }}</td>
                                 <td>
                                     <a href="http://www.instagram.com/openlittermap">
                                         <img src="https://openlittermap.com/assets/icons/ig2.png" alt="" width="38" height="38" style="display: block;" border="0" />
                                     </a>
                                 </td>
-                                <td style="font-size: 0; line-height: 0;" width="20">
-                                    &nbsp;
-                                </td>
+                                <td style="font-size: 0; line-height: 0;" width="20">{{ __('app.nbsp_2') }}</td>
                                 <td>
                                     <a href="http://www.reddit.com/r/openlittermap">
                                         <img src="https://openlittermap.com/assets/icons/reddit.png" alt="" width="38" height="38" style="display: block;" border="0" />
                                     </a>
                                 </td>
-                                <td style="font-size: 0; line-height: 0;" width="20">
-                                    &nbsp;
-                                </td>
+                                <td style="font-size: 0; line-height: 0;" width="20">{{ __('app.nbsp_3') }}</td>
                                 <td>
                                     <a href="https://openlittermap.tumblr.com/">
                                         <img src="https://openlittermap.com/assets/icons/tumblr.png" alt="" width="38" height="38" style="display: block;" border="0" />

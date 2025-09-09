@@ -3,10 +3,10 @@
 		<div class="columns">
 			<div class="column is-half">
 				<br>
-				<h1>Get token</h1>
+				<h1>{{ $t('get_token') }}</h1>
 				<input class="input" v-model="email" placeholder="email" />
 				<input class="input" type="password" v-model="password" placeholder="password" />
-				<button class="button is-info is-large" @click="go">Get token</button>
+				<button class="button is-info is-large" @click="go">{{ $t('get_token') }}</button>
 			</div>
 		</div>
 	</div>
